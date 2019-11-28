@@ -1,0 +1,34 @@
+<br />
+<br />
+<div class="container">
+    <form [formGroup]="sbtForm" (ngSubmit)="onProcessar()">
+
+  <div class="row">
+    <div class="col-md-4 offset-md-4">
+      <div class="card text-center card  bg-default mb-3">
+        <div class="card-header">
+          FUNÇÕES MATEMÁTICAS
+        </div>
+       
+          <div class="card-body">
+            <input type="text" 
+                   id="num1" 
+                   formControlName="num1"
+                   class="form-control input-sm chat-input" 
+                   placeholder="Número 1"/>
+            <br />
+            <input type="text" 
+                   id="num2" 
+                   formControlName="num2"
+                   class="form-control input-sm chat-input" 
+                   placeholder="Número 2"/>
+          </div>
+          <div class="card-footer text-muted">
+            <button class="btn btn-secondary">PROCESSAR</button>
+          </div>
+       
+      </div>
+    </div>
+  </div>
+</form>
+</div>
